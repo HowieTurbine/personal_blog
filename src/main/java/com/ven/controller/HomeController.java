@@ -16,9 +16,14 @@ public class HomeController {
     @RequestMapping("/contents")
     public String contents()
     {
-        System.out.println("now");
         //return jsp的文件名就可以了跳到对应的jsp
         return  "contents";
+    }
+    @RequestMapping("/single")
+    public String single()
+    {
+        //return jsp的文件名就可以了跳到对应的jsp
+        return  "html/single";
     }
 }
 

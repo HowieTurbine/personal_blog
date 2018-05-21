@@ -46,6 +46,46 @@
       <version>4.3.1.RELEASE</version>
     </dependency>
 
+      <!-- 添加Hibernate依赖 -->
+      <dependency>
+          <groupId>org.hibernate</groupId>
+          <artifactId>hibernate-core</artifactId>
+          <version>3.6.5.Final</version>
+      </dependency>
+
+      <!-- 添加Log4J依赖 -->
+      <dependency>
+          <groupId>log4j</groupId>
+          <artifactId>log4j</artifactId>
+          <version>1.2.16</version>
+      </dependency>
+
+      <!--mysql驱动-->
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>8.0.11</version>
+    </dependency>
+
+      <dependency>
+          <groupId>org.slf4j</groupId>
+          <artifactId>slf4j-api</artifactId>
+          <version>1.6.1</version>
+      </dependency>
+
+      <dependency>
+          <groupId>org.slf4j</groupId>
+          <artifactId>slf4j-nop</artifactId>
+          <version>1.6.4</version>
+      </dependency>
+
+      <!-- 添加javassist -->
+      <dependency>
+          <groupId>javassist</groupId>
+          <artifactId>javassist</artifactId>
+          <version>3.11.0.GA</version>
+      </dependency>
+
   </dependencies>
 
   <build>

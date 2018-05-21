@@ -11,6 +11,6 @@
 </head>
 <body>
 <h1>Hello!</h1>
-<jsp:forward page="/WEB-INF/views/html/index.html" />
+<jsp:forward page="/WEB-INF/views/html/index.jsp" />
 </body>
 </html>
