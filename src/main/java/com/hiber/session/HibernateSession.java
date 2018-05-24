@@ -10,11 +10,11 @@ import com.hiber.model.ArticlesEntity;
 import java.util.List;
 
 public class HibernateSession {
-    Configuration configuration=new Configuration().configure();
-    SessionFactory sessionFactory=configuration.buildSessionFactory();
-    Session session=sessionFactory.openSession();
-    Transaction transaction=session.beginTransaction();
-    public ArticlesEntity select() {
+    private Configuration configuration=new Configuration().configure();
+    private SessionFactory sessionFactory=configuration.buildSessionFactory();
+    private Session session=sessionFactory.openSession();
+    private Transaction transaction=session.beginTransaction();
+    public List<ArticlesEntity> selectAll() {
         Query query;
         {
             query = session.createQuery("from ArticlesEntity");
@@ -27,7 +27,22 @@ public class HibernateSession {
         {
             System.out.println(a.getTime());
         }
-        return list.get(0);
+        return list;
+    }
+    public List<ArticlesEntity> select_with_id(int id) {
+        Query query;
+        {
+            query = session.createQuery("from ArticlesEntity where idA=id");
+        }
+        List<ArticlesEntity> list;
+        {
+            list = query.list();
+        }
+        for(ArticlesEntity a:list)
+        {
+            System.out.println(a.getTime());
+        }
+        return list;
     }
 
 

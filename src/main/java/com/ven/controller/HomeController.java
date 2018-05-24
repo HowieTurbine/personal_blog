@@ -10,20 +10,17 @@ public class HomeController {
     public String main()
     {
         System.out.println("now");
-        //return jsp的文件名就可以了跳到对应的jsp
-        return  "index";
+        return  "index.html";
     }
     @RequestMapping("/contents")
     public String contents()
     {
-        //return jsp的文件名就可以了跳到对应的jsp
-        return  "contents";
+        return  "contents.html";
     }
     @RequestMapping("/single")
     public String single()
     {
-        //return jsp的文件名就可以了跳到对应的jsp
-        return  "html/single";
+        return "single.html";
     }
 }
 
