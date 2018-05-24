@@ -29,10 +29,11 @@ public class HibernateSession {
         }
         return list;
     }
-    public List<ArticlesEntity> select_with_id(int id) {
+    public ArticlesEntity select_with_id(int id) {
+        System.out.println(id);
         Query query;
         {
-            query = session.createQuery("from ArticlesEntity where idA=id");
+            query = session.createQuery("from ArticlesEntity A where A.idA = "+id);
         }
         List<ArticlesEntity> list;
         {
@@ -42,7 +43,8 @@ public class HibernateSession {
         {
             System.out.println(a.getTime());
         }
-        return list;
+        System.out.println("Size: "+list.size());
+        return list.get(0);
     }
 
 

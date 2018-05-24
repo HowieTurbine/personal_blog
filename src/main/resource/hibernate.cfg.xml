@@ -8,6 +8,9 @@
         <property name="connection.password"></property>
         <property name="connection.url">jdbc:mysql://203.195.169.29:3306/blog_data</property>
         <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="dialect">org.hibernate.dialect.MySQLInnoDBDialect</property>
+        <property name="hibernate.show_sql">true</property>
         <mapping class="com.hiber.model.ArticlesEntity"/>
+
     </session-factory>
 </hibernate-configuration>

@@ -65,17 +65,6 @@
 	<section id="container">
 		<div class="wrap-container">
 			<!-----------------Content-Box-------------------->
-			<%
-				System.out.println("1");
-				HibernateSession hibernateSession=new HibernateSession();
-				System.out.println("2");
-				ArticlesEntity articleEntity =hibernateSession.select();
-				System.out.println("3");
-				String title=articleEntity.getTitle();
-				String author=articleEntity.getAuthor();
-				String time=articleEntity.getTime().toString();
-				String text=articleEntity.getContent();
-			%>
 			<article class="post zerogrid">
 				<div class="row wrap-post"><!--Start Box-->
 					<div class="entry-header">
