@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script>
+<script>
+    $(document).ready(function(){
+        // var str="<b>"
+        // str+="Ready!"
+        // str+="</b>"
+        // console.log(str);
+        // $("#aa").append(str);
+
+
+        $.ajax({
+            //请求方式
+            type:"GET",
+            //文件位置
+            url:"http://localhost:8080/blog/query/articles",
+            //返回数据格式为json,也可以是其他格式如
+            dataType: "json",
+            //请求成功后要执行的函数，拼接html
+            success: function(data){
+                var str="<ul>";
+                $.each(data,function(i,n){
+                    str+="<li>"+"ID："+n.idA+"</li>";
+                    str+="<li>"+"标题："+n.title+"</li>";
+                    str+="<li>"+"时间："+n.time+"</li>";
+                });
+                str+="</ul>";
+                $("#aa").append(str);
+            }
+        });
+    });
+</script>
+
+<body>
+<div id="aa"></div>
+</body>
+</html>

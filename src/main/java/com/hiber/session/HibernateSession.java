@@ -2,18 +2,17 @@ package com.hiber.session;
 
 import org.hibernate.Query;
 import org.hibernate.Session;
-import org.hibernate.SessionFactory;
+
 import org.hibernate.Transaction;
-import org.hibernate.cfg.Configuration;
 import com.hiber.model.ArticlesEntity;
 
 import java.util.List;
 
 public class HibernateSession {
-    private Configuration configuration=new Configuration().configure();
-    private SessionFactory sessionFactory=configuration.buildSessionFactory();
-    private Session session=sessionFactory.openSession();
+    private HibernateUtils Utils=new HibernateUtils();;
+    private Session session=Utils.getSession();
     private Transaction transaction=session.beginTransaction();
+
     public List<ArticlesEntity> selectAll() {
         Query query;
         {

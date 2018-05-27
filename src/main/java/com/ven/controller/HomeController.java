@@ -22,6 +22,8 @@ public class HomeController {
     {
         return "single.html";
     }
+    @RequestMapping("/JTest")
+    public String test(){return "JqueryTest.html";}
 }
 
 
