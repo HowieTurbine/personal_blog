@@ -65,18 +65,55 @@
 	<section id="container">
 		<div class="wrap-container">
 			<!-----------------Content-Box-------------------->
-			<article class="post zerogrid">
-				<div class="row wrap-post"><!--Start Box-->
-					<div class="entry-header">
-						<span class="time"></span>
-						<h2 class="entry-title"><a href="#"></a></h2>
-						<br>
-						<h4 class="content-box"></h4>
-						<br>
-						<p class="content-box"></p>
-					</div>
-				</div>
+			<article id="main" class="post zerogrid">
 			</article>
+			<script>
+                //获取url中的参数
+                function getUrlParam(name) {
+                    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+                    var r = window.location.search.substr(1).match(reg);  //匹配目标参数
+                    if (r != null) return unescape(r[2]); return null; //返回参数值
+                }
+                var id=getUrlParam('id');
+                console.log(id)
+
+                $(document).ready(function(){
+                    $.ajax({
+                        //请求方式
+                        type:"GET",
+                        //文件位置
+                        url:"./query/article?id="+id,
+                        //返回数据格式为json,也可以是其他格式如
+                        dataType: "json",
+                        //请求成功后要执行的函数，拼接html
+                        success: function(data){
+                            console.log(data)
+
+
+                                var str="<div  class=\"row wrap-post\">";
+                                var now_time=new Date(data.time);
+                                var webPage="#";
+
+                                str+="<div class=\"entry-header\">";
+                                var now_time=new Date(data.time);
+                                str+="<span class=\"time\">"+now_time+"</span>";
+                                str+="<h2 class=\"entry-title\">"+data.title+"</h2>";
+
+                                str+="<br>";
+                                str+="<h4 class=\"content-box\">"+data.author+"</h4>"
+                                str+="<br>";
+                                str+="<p class=\"content-box\">"+data.content+"</p>"
+
+                                str+="</div>";
+                                str+="</div>"
+                                $("#main").append(str);
+
+
+                            //$("#aa").append(str);
+                        }
+                    });
+                });
+			</script>
 
 		</div>
 	</section>

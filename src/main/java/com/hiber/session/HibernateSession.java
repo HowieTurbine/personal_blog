@@ -16,7 +16,7 @@ public class HibernateSession {
     public List<ArticlesEntity> selectAll() {
         Query query;
         {
-            query = session.createQuery("from ArticlesEntity");
+            query = session.createQuery("from ArticlesEntity E order by E.time desc ");
         }
         List<ArticlesEntity> list;
         {

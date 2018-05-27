@@ -2,6 +2,7 @@ package com.ven.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class HomeController {
@@ -18,12 +19,10 @@ public class HomeController {
         return  "contents.html";
     }
     @RequestMapping("/single")
-    public String single()
+    public String single(@RequestParam(value="id",required=true)String id)
     {
         return "single.html";
     }
-    @RequestMapping("/JTest")
-    public String test(){return "JqueryTest.html";}
 }
 
 

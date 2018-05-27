@@ -14,6 +14,7 @@ import java.util.List;
 @Controller
 @RequestMapping("/query")
 public class ArticlesController {
+    //Query for all the articles
     @RequestMapping("/articles")
     @ResponseBody
     public List<ArticlesEntity> getAll()
@@ -29,6 +30,7 @@ public class ArticlesController {
     @ResponseBody
     public ArticlesEntity select_by_id(@RequestParam(value="id",required=true)String id)
     {
+        //Query to the specific article by id
         ArticlesEntity selected;
         HibernateSession session=new HibernateSession();
         selected=session.select_with_id(Integer.valueOf(id));
