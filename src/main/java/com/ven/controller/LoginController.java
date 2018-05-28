@@ -2,8 +2,7 @@ package com.ven.controller;
 
 import com.hiber.model.LoginEntity;
 import com.hiber.session.LoginSession;
-import com.ven.service.LoginCheck;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.ven.service.LoginSelector;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -14,20 +13,16 @@ import java.util.List;
 @Controller
 public class LoginController {
 
-    private LoginCheck loginCheck;
-
+    private LoginSelector loginSelector;
+    public LoginController()
+    {
+        loginSelector =new LoginSelector();
+    }
     @RequestMapping("/allUser")
     @ResponseBody
     public List<LoginEntity> allUser()
     {
-        LoginSession session=new LoginSession();
-        List<LoginEntity> e=session.selectAll();
-        return e;
-    }
-
-    public LoginController()
-    {
-        loginCheck=new LoginCheck();
+        return loginSelector.allUser();
     }
 
     @RequestMapping("/login")
@@ -35,6 +30,6 @@ public class LoginController {
     public String login(@RequestParam(value="username",required = true)String username,
                         @RequestParam(value="password",required = true) String password)
     {
-        return loginCheck.check(username,password);
+        return loginSelector.check(username,password);
     }
 }
