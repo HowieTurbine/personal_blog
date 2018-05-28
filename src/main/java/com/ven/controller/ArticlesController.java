@@ -1,9 +1,8 @@
 package com.ven.controller;
 
 import com.hiber.model.ArticlesEntity;
-import com.hiber.session.HibernateSession;
+import com.hiber.session.ArticleSession;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -19,7 +18,7 @@ public class ArticlesController {
     @ResponseBody
     public List<ArticlesEntity> getAll()
     {
-        HibernateSession session=new HibernateSession();
+        ArticleSession session=new ArticleSession();
         List<ArticlesEntity> all=session.selectAll();
         if(all!=null)
             return all;
@@ -32,7 +31,7 @@ public class ArticlesController {
     {
         //Query to the specific article by id
         ArticlesEntity selected;
-        HibernateSession session=new HibernateSession();
+        ArticleSession session=new ArticleSession();
         selected=session.select_with_id(Integer.valueOf(id));
         return selected;
     }

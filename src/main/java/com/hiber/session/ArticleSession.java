@@ -8,7 +8,7 @@ import com.hiber.model.ArticlesEntity;
 
 import java.util.List;
 
-public class HibernateSession {
+public class ArticleSession {
     private HibernateUtils Utils=new HibernateUtils();;
     private Session session=Utils.getSession();
     private Transaction transaction=session.beginTransaction();

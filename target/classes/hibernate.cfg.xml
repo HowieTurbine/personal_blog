@@ -11,7 +11,7 @@
         <property name="dialect">org.hibernate.dialect.MySQLInnoDBDialect</property>
         <property name="hibernate.show_sql">true</property>
         <mapping class="com.hiber.model.ArticlesEntity"/>
-
+        <mapping class="com.hiber.model.LoginEntity"/>
 
 
     </session-factory>
