@@ -1,6 +1,6 @@
 package com.ven.service;
 
-import com.hiber.model.LoginEntity;
+import com.hiber.model.UserEntity;
 import com.hiber.session.LoginSession;
 import org.springframework.stereotype.Service;
 
@@ -15,7 +15,7 @@ public class LoginSelector {
         res.put("Error","");
         res.put("Identity","");
         LoginSession session = new LoginSession();
-        LoginEntity res_entity = session.select_by_username(username);
+        UserEntity res_entity = session.select_by_username(username);
         if (res_entity == null)
         {
             res.put("Error","No such user");
@@ -35,9 +35,9 @@ public class LoginSelector {
         }
     }
 
-    public List<LoginEntity> allUser() {
+    public List<UserEntity> allUser() {
         LoginSession session = new LoginSession();
-        List<LoginEntity> e = session.selectAll();
+        List<UserEntity> e = session.selectAll();
         return e;
     }
 

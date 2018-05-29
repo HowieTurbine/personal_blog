@@ -1,11 +1,10 @@
 package com.hiber.model;
 
 import javax.persistence.*;
-import java.io.Serializable;
 
 @Entity
 @Table(name = "login", schema = "blog_data", catalog = "")
-public class LoginEntity {
+public class UserEntity {
     private int uId;
     private String uName;
     private String uPassword;
@@ -57,7 +56,7 @@ public class LoginEntity {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        LoginEntity that = (LoginEntity) o;
+        UserEntity that = (UserEntity) o;
 
         if (uId != that.uId) return false;
         if (uName != null ? !uName.equals(that.uName) : that.uName != null) return false;

@@ -23,6 +23,16 @@ public class HomeController {
     {
         return "single.html";
     }
+    @RequestMapping("/Login")
+    public String login()
+    {
+        return "login.html";
+    }
+    @RequestMapping("/SignUp")
+    public String SignUp()
+    {
+        return "sign_up.html";
+    }
 }
 
 

@@ -61,6 +61,31 @@
             <a href="/main"><img src="images/logo.jpg" /></a>
         </div>
     </header>
+    <script>
+        $(document).ready(function(){
+            $("#SignUp").click(function(e){
+                console.log("A");
+                $.ajax({
+                    type: "POST",
+                    url:"./user/SignUp",
+                    data:$('form').serialize(),// 要提交的表单
+                    success: function(data)
+                    {
+                        if(data["Error"]!=="")
+                        {
+                            alert(data["Error"]);
+                            $('form').reset();
+                        }
+                        else
+                        {
+                            alert("Successfully add new user!");
+                        }
+                    }
+                });
+            });
+        });
+
+    </script>
     <!--Container-->
     <section id="container">
         <div class="wrap-container">
@@ -70,15 +95,15 @@
                     <div class="content-box">
                         <h1>Sign up</h1>
                         <br>
-                        <form name="input" action="" method="get">
+                        <form name="input" action="" method="post">
                             Name:
-                            <input type="text" name="Name" value="" size="20">
+                            <input type="text" name="username" value="" size="20">
                             Password:
-                            <input type="text" name="Password" value="" size="20">
+                            <input type="password" name="password" value="" size="20">
                             Invitation Code:
                             <input type="text" name="iCode" value="" size="20">
                             <br>
-                            <input type="submit" value="Sign Up" onmousemove="this.style.backgroundColor='#4B4B4B'" onmouseout="this.style.backgroundColor='#d1d1d1'"/>
+                            <input id="SignUp" type="button" value="Sign Up" onmousemove="this.style.backgroundColor='#4B4B4B'" onmouseout="this.style.backgroundColor='#d1d1d1'"/>
                         </form>
                     </div>
                 </div>

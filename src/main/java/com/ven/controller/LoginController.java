@@ -1,7 +1,6 @@
 package com.ven.controller;
 
-import com.hiber.model.LoginEntity;
-import com.hiber.session.LoginSession;
+import com.hiber.model.UserEntity;
 import com.ven.service.LoginSelector;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -23,7 +22,7 @@ public class LoginController {
     }
     @RequestMapping("/allUser")
     @ResponseBody
-    public List<LoginEntity> allUser()
+    public List<UserEntity> allUser()
     {
         return loginSelector.allUser();
     }

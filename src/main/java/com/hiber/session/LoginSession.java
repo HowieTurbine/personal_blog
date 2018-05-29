@@ -1,6 +1,6 @@
 package com.hiber.session;
 
-import com.hiber.model.LoginEntity;
+import com.hiber.model.UserEntity;
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
@@ -8,37 +8,40 @@ import org.hibernate.Transaction;
 import java.util.List;
 
 public class LoginSession {
-    private HibernateUtils Utils=new HibernateUtils();;
+    private HibernateUtils Utils=new HibernateUtils();
     private Session session=Utils.getSession();
     private Transaction transaction=session.beginTransaction();
 
-    public List<LoginEntity> selectAll() {
+    public List<UserEntity> selectAll() {
         Query query;
         {
-            query = session.createQuery("from LoginEntity E ");
+            query = session.createQuery("from UserEntity E ");
         }
-        List<LoginEntity> list;
+        List<UserEntity> list;
         {
             list = query.list();
         }
-        for(LoginEntity a:list)
+        for(UserEntity a:list)
         {
 
         }
         return list;
     }
-    public LoginEntity select_by_username(String username)
+    public UserEntity select_by_username(String username)
     {
         Query query;
         {
             System.out.println(username);
-            query = session.createQuery("from LoginEntity E where E.uName=\'"+ username+"\'");
+            query = session.createQuery("from UserEntity E where E.uName=\'"+ username+"\'");
         }
-        List<LoginEntity> list;
+        List<UserEntity> list;
         {
             list = query.list();
         }
-        return list.get(0);
+        if(list.size()==0)
+            return null;
+        else
+            return list.get(0);
 
     }
 }

@@ -45,6 +45,7 @@
     <script src="js/css3-mediaqueries.js"></script>
     <![endif]-->
 
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
 </head>
 
 <body>
@@ -61,6 +62,45 @@
             <a href="/main"><img src="images/logo.jpg" /></a>
         </div>
     </header>
+
+    <script>
+            // $('form').submit(function(e) {
+            //     //获取表单的系列化数据。这会生成一个A=valueA&B=valueB这种形式的字符串。
+            //     var formData = $('form').serialize();
+            //     console.log("Data" + formData)
+            //     $.post("./user/login",formData,function(data)
+            //     {
+            //         console.log("Return: "+data)
+            //     });
+            // });
+            $(document).ready(function(){
+                $("#SignIn").click(function(e){
+                    console.log("A");
+                    $.ajax({
+                        type: "POST",
+                        url:"./user/login",
+                        data:$('form').serialize(),// 要提交的表单
+                        success: function(data)
+                        {
+                            if(data["Error"]!=="")
+                            {
+                                alert(data["Error"]);
+                                $('form').reset();
+                            }
+                            else
+                            {
+                                alert(data["Identity"]);
+                            }
+                        }
+                    });
+                });
+                $('#SignUp').click(function(e)
+                {
+                    window.location.href='./SignUp';
+                })
+            });
+    </script>
+
     <!--Container-->
     <section id="container">
         <div class="wrap-container">
@@ -70,14 +110,14 @@
                 <div class="content-box">
                     <h1>Login </h1>
                     <br>
-                    <form name="input" action="" method="get">
+                    <form name="input" action="" method="post">
                         Name:
-                        <input type="text" name="Name" value="" size="20">
+                        <input type="text" name="username" value="" size="20"/>
                         Password:
-                        <input type="text" name="Password" value="" size="20">
+                        <input type="password" name="password" value="" size="20"/>
                         <br>
-                        <input type="submit" value="Sing In" onmousemove="this.style.backgroundColor='#4B4B4B'" onmouseout="this.style.backgroundColor='#d1d1d1'">
-                        <input type="submit" value="Sing Up" onmousemove="this.style.backgroundColor='#4B4B4B'" onmouseout="this.style.backgroundColor='#d1d1d1'"/>
+                        <input type="button" id="SignIn" value="Sign In" onmousemove="this.style.backgroundColor='#4B4B4B'" onmouseout="this.style.backgroundColor='#d1d1d1'"/>
+                        <input type="button" id="SignUp" value="Sign Up" onmousemove="this.style.backgroundColor='#4B4B4B'" onmouseout="this.style.backgroundColor='#d1d1d1'"/>
                     </form>
                 </div>
             </div>
