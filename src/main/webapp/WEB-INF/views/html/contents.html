@@ -57,6 +57,31 @@
 				<li><a href='#'><span>Main Page</span></a></li>
 			</ul>
 		</div>
+
+        <div  class="align-center">
+            <h4 id="userInfo" style="text-align: right"></h4>
+        </div>
+
+        <script src="./js/jquerysession.js"></script>
+        <script>
+            $(document).ready(function(){
+                //$.session.set('username', 'aa')
+                var username = $.session.get('username');
+                if(typeof(username)=='undefined')
+                {
+                    var jump = "please login " +" <a href=\"./Login\">here</a>"+ " first";
+                    $("#userInfo").html(jump);
+                }
+                else
+                {
+                    console.log('cc')
+                    var welcome = "welcome "+username;
+                    console.log(welcome)
+                    $("#userInfo").text(welcome);
+                }
+            });
+        </script>
+
 		<header class="">
 			<div class="logo">
 				<a href="index.html"><img src="images/logo.jpg" /></a>
@@ -96,7 +121,7 @@
                     str+="<span class=\"time\">"+now_time+"</span>";
                     str+="<h2 class=\"entry-title\">"+"<a href="+webPage+">"+n.title+"</a></h2>";
                     str+="</div>";
-                    str+="</div>"
+                    str+="</div>";
                     $("#contents").append(str);
                 });
 

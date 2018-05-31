@@ -79,6 +79,9 @@
                         else
                         {
                             alert("Successfully add new user!");
+                            var setTime = setTimeout(function(){
+                                window.history.back(-1);
+                            },2000);
                         }
                     }
                 });

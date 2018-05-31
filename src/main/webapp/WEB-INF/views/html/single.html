@@ -56,6 +56,29 @@
 			<li><a href='#'><span>Main Page</span></a></li>
 		</ul>
 	</div>
+
+    <div  class="align-center">
+        <h4 id="userInfo" style="text-align: right"></h4>
+    </div>
+
+    <script src="./js/jquerysession.js"></script>
+    <script>
+        $(document).ready(function(){
+            //$.session.set('username', 'aa')
+            var username = $.session.get('username');
+            if(typeof(username)=='undefined')
+            {
+                var jump = "please login " +" <a href=\"./Login\">here</a>"+ " first";
+                $("#userInfo").html(jump);
+            }
+            else
+            {
+                var welcome = "welcome "+username;
+                $("#userInfo").text(welcome);
+            }
+        });
+    </script>
+
 	<header class="">
 		<div class="logo">
 			<a href="/main"><img src="images/logo.jpg" /></a>
@@ -75,7 +98,8 @@
                     if (r != null) return unescape(r[2]); return null; //返回参数值
                 }
                 var id=getUrlParam('id');
-                console.log(id)
+                console.log(id);
+
 
                 $(document).ready(function(){
                     $.ajax({
@@ -95,7 +119,6 @@
                                 var webPage="#";
 
                                 str+="<div class=\"entry-header\">";
-                                var now_time=new Date(data.time);
                                 str+="<span class=\"time\">"+now_time+"</span>";
                                 str+="<h2 class=\"entry-title\">"+data.title+"</h2>";
 
@@ -105,7 +128,7 @@
                                 str+="<p class=\"content-box\">"+data.content+"</p>"
 
                                 str+="</div>";
-                                str+="</div>"
+                                str+="</div>";
                                 $("#main").append(str);
 
 

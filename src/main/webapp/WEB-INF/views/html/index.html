@@ -56,6 +56,28 @@
 			   <li><a href='#'><span>Main Page</span></a></li>
 			</ul>
 		</div>
+
+		<div  class="align-center">
+			<h4 id="userInfo" style="text-align: right"></h4>
+		</div>
+
+		<script src="./js/jquerysession.js"></script>
+		<script>
+            $(document).ready(function(){
+                var username = $.session.get('username');
+                if(typeof(username)=='undefined')
+                {
+                    var jump = "please login " +" <a href=\"./Login\">here</a>"+ " first";
+                    $("#userInfo").html(jump);
+                }
+                else
+                {
+                    var welcome = "welcome "+username;
+                    $("#userInfo").text(welcome);
+                }
+            });
+		</script>
+
 		<header class="">
 			<div class="logo">
 				<a href="index.html"><img src="images/logo.jpg" /></a>
