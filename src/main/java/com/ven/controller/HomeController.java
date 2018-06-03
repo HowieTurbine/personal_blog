@@ -33,6 +33,11 @@ public class HomeController {
     {
         return "sign_up.html";
     }
+    @RequestMapping("/NewArticle")
+    public String newAtricle()
+    {
+        return "NewArticle.html";
+    }
 }
 
 
