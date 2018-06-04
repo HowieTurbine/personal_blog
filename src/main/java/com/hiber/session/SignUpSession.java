@@ -4,22 +4,33 @@ import com.hiber.model.Identity;
 import com.hiber.model.UserEntity;
 import org.hibernate.Query;
 import org.hibernate.Session;
+import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
+@Service
 public class SignUpSession {
 
-    private HibernateUtils Utils=new HibernateUtils();
-    private Session session=Utils.getSession();
+    private final SessionFactory sessionFactory;
+    private Session session;
+    private Transaction transaction;
+
+    @Autowired
+    public SignUpSession(SessionFactory sessionFactory) {
+        this.sessionFactory = sessionFactory;
+        Session session = sessionFactory.openSession();
+        Transaction transaction=session.beginTransaction();
+    }
 
     private String iCode ="1234";
 
     public UserEntity select_by_username(String username)
     {
-        return new LoginSession().select_by_username(username);
+        return new LoginSession(sessionFactory).select_by_username(username);
     }
     public Map<String,String> add(String username,String password,String iCode)
     {

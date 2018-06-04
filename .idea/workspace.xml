@@ -7,14 +7,47 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8000bdb0-b8d7-4916-b5ca-e822037c4448" name="Default" comment="modify request method for login to POST">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hiber/session/NewAtricleSession.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ven/controller/NewArticleController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ven/service/NewAtricleSelector.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/html/NewArticle.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hiber/model/CommentsEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hiber/model/LoginEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hiber/session/CommentsSession.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ven/controller/CommentsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ven/service/CommentsSelector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/blog_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/blog_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/93eb3ef7-37a6-4696-8269-7fce68459f32.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/93eb3ef7-37a6-4696-8269-7fce68459f32.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ven/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ven/controller/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resource/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resource/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/blog.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hiber/model/ArticlesEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hiber/model/ArticlesEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hiber/model/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hiber/model/UserEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hiber/session/ArticleSession.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hiber/session/ArticleSession.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hiber/session/HibernateUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hiber/session/LoginSession.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hiber/session/LoginSession.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hiber/session/NewAtricleSession.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hiber/session/NewAtricleSession.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hiber/session/SignUpSession.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hiber/session/SignUpSession.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ven/controller/ArticlesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ven/controller/ArticlesController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ven/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ven/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ven/controller/NewArticleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ven/controller/NewArticleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ven/controller/SignUpController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ven/controller/SignUpController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ven/service/ArticleSelector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ven/service/ArticleSelector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ven/service/LoginSelector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ven/service/LoginSelector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ven/service/NewAtricleSelector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ven/service/NewAtricleSelector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ven/service/SignUpSelector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ven/service/SignUpSelector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resource/hibernate.cfg.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/html/NewArticle.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/html/NewArticle.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/html/contents.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/html/contents.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/html/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/html/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/html/sign_up.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/html/sign_up.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/html/single.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/html/single.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/blog/WEB-INF/dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/blog/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/blog/WEB-INF/lib/antlr-2.7.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/blog/WEB-INF/lib/commons-collections-3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/blog/WEB-INF/lib/hibernate-commons-annotations-3.2.0.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/blog/WEB-INF/lib/hibernate-core-3.6.5.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/blog/WEB-INF/lib/hibernate-jpa-2.0-api-1.0.0.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/blog/WEB-INF/lib/jta-1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ven/controller/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ven/controller/HomeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -43,6 +76,24 @@
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="blog_data@203.195.169.29" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="blog_data@203.195.169.29" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="blog_data: schema" type="c314c289:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="blog_data@203.195.169.29" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="blog_data: schema" type="c314c289:MysqlImplModel$Schema" />
+        <item name="Articles: table" type="98d5ac3d:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="hibernate.cfg.xml/Hibernate" type="feb32156:DbDataSourceImpl" />
       </path>
     </expand>
@@ -50,128 +101,103 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="single.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/html/single.html">
+      <file leaf-file-name="ArticlesController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ven/controller/ArticlesController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="29" selection-start-line="29" selection-end-line="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#684#685#0" expanded="true" />
+                <element signature="e#724#725#0" expanded="true" />
+                <element signature="e#797#798#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ArticleSession.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hiber/session/ArticleSession.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="151">
+              <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dispatcher-servlet.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/target/blog/WEB-INF/dispatcher-servlet.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="700">
+              <caret line="28" column="22" lean-forward="true" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserEntity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hiber/model/UserEntity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ArticlesEntity.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hiber/model/ArticlesEntity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="400">
-              <caret line="67" column="12" selection-start-line="67" selection-start-column="12" selection-end-line="67" selection-end-column="53" />
-              <folding>
-                <element signature="n#style#0;n#h4#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SignUpSession.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/hiber/session/SignUpSession.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="33" column="22" lean-forward="true" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NewArticle.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/html/NewArticle.html">
+      <file leaf-file-name="CommentsEntity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hiber/model/CommentsEntity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="275">
-              <caret line="128" column="99" selection-start-line="128" selection-start-column="99" selection-end-line="128" selection-end-column="99" />
-              <folding>
-                <element signature="n#style#0;n#textarea#0;n#form#0;n#div#0;n#article#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+              <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NewAtricleSession.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/hiber/session/NewAtricleSession.java">
+      <file leaf-file-name="Identity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hiber/model/Identity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="19" column="29" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="29" />
+            <state relative-caret-position="75">
+              <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginEntity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hiber/model/LoginEntity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="250">
+              <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dispatcher-servlet.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="55" column="19" selection-start-line="55" selection-start-column="19" selection-end-line="55" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginSession.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hiber/session/LoginSession.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="16">
+              <caret line="44" selection-start-line="44" selection-end-line="44" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SignUpController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ven/controller/SignUpController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="22" column="38" lean-forward="true" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ven/controller/LoginController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
-              <caret line="30" column="17" lean-forward="true" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#733#734#0" expanded="true" />
-                <element signature="e#779#780#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NewArticleController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ven/controller/NewArticleController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="356">
-              <caret line="26" column="55" lean-forward="true" selection-start-line="26" selection-start-column="55" selection-end-line="26" selection-end-column="55" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NewAtricleSelector.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ven/service/NewAtricleSelector.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="13" column="66" lean-forward="true" selection-start-line="13" selection-start-column="66" selection-end-line="13" selection-end-column="66" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SignUpSelector.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ven/service/SignUpSelector.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HomeController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ven/controller/HomeController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="35" column="32" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="32" />
-              <folding>
-                <element signature="e#693#694#0" expanded="true" />
-                <element signature="e#728#729#0" expanded="true" />
-                <element signature="e#792#793#0" expanded="true" />
-                <element signature="e#829#830#0" expanded="true" />
-                <element signature="e#910#911#0" expanded="true" />
-                <element signature="e#950#951#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -201,7 +227,12 @@
       <find>herf</find>
       <find>get</find>
       <find>/images/</find>
+      <find>123.121.81.183</find>
+      <find>hibernate</find>
     </findStrings>
+    <dirStrings>
+      <dir>D:\IdeaProjects\personal_blog</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -212,17 +243,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/hello.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/HomeController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/WebConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/index.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/hello.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/contents.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/log4j.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/hiber/model/ArticleEntity.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/93eb3ef7-37a6-4696-8269-7fce68459f32/console.sql" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/html/contents.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/hibernate.cfg.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/hiber/model/com/hiber/session/DeptDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hibernate/model/ArticlesEntity.java" />
@@ -230,38 +254,46 @@
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/html/single.jsp" />
         <option value="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/html/owl-carousel/JqueryTest.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/hiber/session/ThreadLocal.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hiber/session/HibernateSession.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/html/JqueryTest.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/hiber/model/Identity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hiber/model/LoginEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/ven/service/LoginCheck.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ven/service/ArticleSelector.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ven/controller/ArticlesController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ven/service/LoginSelector.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ven/controller/LoginController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ven/controller/SignUpController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hiber/session/ArticleSession.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hiber/session/LoginSession.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hiber/session/SignUpSession.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hiber/session/HibernateUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ven/service/SignUpSelector.java" />
-        <option value="$PROJECT_DIR$/src/main/resource/hibernate.cfg.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/html/js/jquerysession.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/html/login.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/html/index.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/html/single.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/html/contents.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/html/sign_up.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/html/owl-carousel/NewArticle.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hiber/session/NewAtricleSession.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ven/service/NewAtricleSelector.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ven/controller/HomeController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ven/controller/NewArticleController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/html/contents.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/html/login.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/html/NewArticle.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/html/sign_up.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/html/single.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hiber/session/HibernateUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hiber/model/CommentsNew.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ven/controller/CommentsController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ven/service/CommentsSelector.java" />
+        <option value="$PROJECT_DIR$/src/main/resource/hibernate.cfg.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hiber/session/CommentsSession.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hiber/session/LoginSession.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hiber/session/NewAtricleSession.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hiber/session/SignUpSession.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ven/service/ArticleSelector.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ven/service/LoginSelector.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ven/service/NewAtricleSelector.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ven/service/SignUpSelector.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ven/controller/SignUpController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ven/controller/ArticlesController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ven/controller/LoginController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ven/controller/NewArticleController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hiber/session/ArticleSession.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hiber/model/ArticlesEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hiber/model/CommentsEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hiber/model/LoginEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hiber/model/UserEntity.java" />
       </list>
     </option>
   </component>
@@ -442,7 +474,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="JPA.DatabaseSchemaImportDialog" value="93eb3ef7-37a6-4696-8269-7fce68459f32" />
-    <property name="SearchEverywhereHistoryKey" value="iCode&#9;PSI&#9;JAVA://com.hiber.session.SignUpSession#iCode&#10;reformat&#9;ACTION&#9;ReformatCode&#10;word&#9;PSI&#9;JAVA://com.sun.xml.internal.fastinfoset.algorithm.BuiltInEncodingAlgorithm.WordListener&#10;getter&#9;ACTION&#9;GenerateGetterAndSetter" />
+    <property name="SearchEverywhereHistoryKey" value="Cons&#9;ACTION&#9;GenerateConstructor&#10;getter&#9;ACTION&#9;GenerateGetterAndSetter&#10;ivate&#9;PSI&#9;JAVA://java.rmi.activation.ActivateFailedException&#10;iCode&#9;PSI&#9;JAVA://com.hiber.session.SignUpSession#iCode&#10;reformat&#9;ACTION&#9;ReformatCode&#10;word&#9;PSI&#9;JAVA://com.sun.xml.internal.fastinfoset.algorithm.BuiltInEncodingAlgorithm.WordListener" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="Tencent" />
@@ -452,7 +484,7 @@
     <property name="node.js.selected.package.prettier" value="" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.17723578" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
@@ -463,9 +495,9 @@
     </key>
     <key name="ImportMappingsDialog.RecentPackages">
       <recent name="com.hiber.model" />
+      <recent name="" />
       <recent name="com.hibernate.model" />
       <recent name="com" />
-      <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\IdeaProjects\personal_blog\src\main\webapp\WEB-INF\views\html" />
@@ -624,7 +656,7 @@
       <workItem from="1526885257352" duration="4265000" />
       <workItem from="1526908085856" duration="5775000" />
       <workItem from="1527166907984" duration="48334000" />
-      <workItem from="1528024855506" duration="8924000" />
+      <workItem from="1528024855506" duration="20399000" />
     </task>
     <task id="LOCAL-00001" summary="Add test version hibernate">
       <created>1526909857973</created>
@@ -696,18 +728,24 @@
       <option name="project" value="LOCAL" />
       <updated>1527772326864</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="new function: add new article">
+      <created>1528034335509</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1528034335509</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="104778000" />
+    <option name="totallyTimeSpent" value="116253000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="15" sideWeight="0.19427083" side_tool="true" visible="true" weight="0.3287234" />
+      <window_info anchor="bottom" id="Event Log" order="15" sideWeight="0.1203125" side_tool="true" visible="true" weight="0.42021278" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32943678" />
       <window_info anchor="right" id="Maven Projects" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
@@ -719,28 +757,28 @@
       <window_info id="UI Designer" order="3" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49739584" weight="0.26170212" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49583334" weight="0.26170212" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info id="Image Layers" order="5" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Version Control" order="13" sideWeight="0.49947917" weight="0.32978722" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.80572915" visible="true" weight="0.3287234" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8796875" visible="true" weight="0.42021278" />
       <window_info anchor="bottom" id="Spring" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info id="Persistence" order="7" sideWeight="0.22503962" side_tool="true" visible="true" weight="0.146875" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7749604" visible="true" weight="0.146875" />
+      <window_info id="Persistence" order="7" sideWeight="0.45137614" side_tool="true" visible="true" weight="0.22604166" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.54862386" visible="true" weight="0.22604166" />
       <window_info id="Web" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49947917" weight="0.3287234" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Database Console" order="16" sideWeight="0.49947917" weight="0.32978722" />
+      <window_info anchor="bottom" id="Database Console" order="16" sideWeight="0.49895832" weight="0.32978722" />
       <window_info anchor="bottom" id="Docker" order="14" show_stripe_button="false" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49947917" weight="0.3287234" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -786,7 +824,8 @@
     <MESSAGE value="modify request method for login to POST" />
     <MESSAGE value="Add SignUp and login page with relative function" />
     <MESSAGE value="add session operation in the web page" />
-    <option name="LAST_COMMIT_MESSAGE" value="add session operation in the web page" />
+    <MESSAGE value="new function: add new article" />
+    <option name="LAST_COMMIT_MESSAGE" value="new function: add new article" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -794,73 +833,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="das://93eb3ef7-37a6-4696-8269-7fce68459f32/schema/blog_data/table/articles">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/8.0.11/mysql-connector-java-8.0.11.jar!/com/mysql/cj/jdbc/exceptions/SQLError.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="71" selection-start-line="71" selection-end-line="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://93eb3ef7-37a6-4696-8269-7fce68459f32/schema/blog_data/table/Articles">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hibernate/model/ArticlesEntity.java" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="103" column="17" selection-start-line="103" selection-start-column="17" selection-end-line="103" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/html/js/jquery1111.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-75">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/html/JqueryTest.html" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_151/jre/lib/rt.jar!/com/sun/xml/internal/fastinfoset/algorithm/BuiltInEncodingAlgorithm.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="64" column="21" selection-start-line="64" selection-start-column="21" selection-end-line="64" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/html/owl-carousel/owl.carousel.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-985">
-          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/html/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="108" column="129" selection-start-line="108" selection-start-column="122" selection-end-line="108" selection-end-column="129" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/target/classes/hibernate.cfg.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
@@ -868,76 +840,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="14" column="37" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/javax/persistence/hibernate-jpa-2.0-api/1.0.0.Final/hibernate-jpa-2.0-api-1.0.0.Final.jar!/javax/persistence/Entity.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="325">
           <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hiber/model/Identity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/8.0.11/mysql-connector-java-8.0.11-sources.jar!/com/mysql/cj/jdbc/exceptions/SQLError.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="115" lean-forward="true" selection-start-line="115" selection-end-line="115" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="6" lean-forward="true" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/blog/WEB-INF/dispatcher-servlet.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-373" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hiber/session/HibernateUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#560#561#0" expanded="true" />
-            <element signature="e#604#605#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://93eb3ef7-37a6-4696-8269-7fce68459f32/schema/blog_data/table/login">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hiber/session/ArticleSession.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="22" column="32" lean-forward="true" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resource/hibernate.cfg.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="12" column="31" lean-forward="true" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -952,43 +858,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="13" selection-start-column="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/html/contents.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1825">
-          <caret line="73" column="17" selection-start-line="73" selection-start-column="17" selection-end-line="73" selection-end-column="17" />
-          <folding>
-            <element signature="n#style#0;n#h4#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/html/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1675">
-          <caret line="67" column="45" selection-start-line="67" selection-start-column="45" selection-end-line="67" selection-end-column="45" />
-          <folding>
-            <element signature="n#style#0;n#h4#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/html/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="98" column="18" lean-forward="true" selection-end-line="186" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ven/controller/ArticlesController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1018,148 +887,197 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/log4j.properties">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="492">
-          <caret line="42" column="11" lean-forward="true" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
+    <entry file="das://93eb3ef7-37a6-4696-8269-7fce68459f32/schema/blog_data/table/login">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ven/service/ArticleSelector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="15" column="46" lean-forward="true" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/contents.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ven/service/LoginSelector.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="775">
-          <caret line="37" column="32" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hiber/session/LoginSession.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-50">
-          <caret line="11" column="47" lean-forward="true" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hiber/model/UserEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="68" column="13" selection-start-line="68" selection-start-column="13" selection-end-line="68" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hiber/model/ArticlesEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="275">
+          <caret line="11" column="6" lean-forward="true" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/html/sign_up.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="700">
-          <caret line="82" column="52" lean-forward="true" selection-start-line="82" selection-start-column="52" selection-end-line="82" selection-end-column="52" />
+        <state relative-caret-position="-596">
+          <caret line="54" column="41" selection-start-line="54" selection-start-column="41" selection-end-line="54" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_151/src.zip!/java/rmi/activation/ActivateFailedException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/html/single.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
-          <caret line="67" column="12" selection-start-line="67" selection-start-column="12" selection-end-line="67" selection-end-column="53" />
+          <caret line="121" column="69" selection-start-line="121" selection-start-column="61" selection-end-line="121" selection-end-column="69" />
           <folding>
             <element signature="n#style#0;n#h4#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/html/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="554">
+          <caret line="67" column="45" selection-start-line="67" selection-start-column="45" selection-end-line="67" selection-end-column="45" />
+          <folding>
+            <element signature="n#style#0;n#h4#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/html/contents.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="55" column="37" selection-start-line="55" selection-start-column="27" selection-end-line="55" selection-end-column="37" />
+          <folding>
+            <element signature="n#style#0;n#h4#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/html/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="57" column="37" lean-forward="true" selection-start-line="57" selection-start-column="37" selection-end-line="57" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/html/NewArticle.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="96" column="36" lean-forward="true" selection-start-line="96" selection-start-column="36" selection-end-line="96" selection-end-column="36" />
+          <folding>
+            <element signature="n#style#0;n#textarea#0;n#form#0;n#div#0;n#article#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hiber/model/CommentsNew.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#111#112#0" expanded="true" />
+            <element signature="e#140#141#0" expanded="true" />
+            <element signature="e#184#185#0" expanded="true" />
+            <element signature="e#220#221#0" expanded="true" />
+            <element signature="e#254#255#0" expanded="true" />
+            <element signature="e#281#282#0" expanded="true" />
+            <element signature="e#324#325#0" expanded="true" />
+            <element signature="e#356#357#0" expanded="true" />
+            <element signature="e#391#392#0" expanded="true" />
+            <element signature="e#422#423#0" expanded="true" />
+            <element signature="e#470#471#0" expanded="true" />
+            <element signature="e#505#506#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ven/controller/HomeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="35" column="32" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="32" />
+        <state relative-caret-position="305">
+          <caret line="15" column="30" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="30" />
           <folding>
             <element signature="e#693#694#0" expanded="true" />
             <element signature="e#728#729#0" expanded="true" />
             <element signature="e#792#793#0" expanded="true" />
             <element signature="e#829#830#0" expanded="true" />
-            <element signature="e#910#911#0" expanded="true" />
-            <element signature="e#950#951#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ven/service/SignUpSelector.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.3.1.RELEASE/spring-beans-4.3.1.RELEASE.jar!/org/springframework/beans/factory/annotation/Autowired.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="225">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hiber/session/SignUpSession.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.3.1.RELEASE/spring-beans-4.3.1.RELEASE.jar!/org/springframework/beans/factory/annotation/InjectionMetadata.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="33" column="22" lean-forward="true" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="1050">
+          <caret line="59" selection-start-line="59" selection-end-line="59" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ven/controller/LoginController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ven/controller/CommentsController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="30" column="17" lean-forward="true" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
+        <state relative-caret-position="121">
+          <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#733#734#0" expanded="true" />
+            <element signature="e#739#740#0" expanded="true" />
             <element signature="e#779#780#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ven/controller/NewArticleController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resource/hibernate.cfg.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="26" column="55" lean-forward="true" selection-start-line="26" selection-start-column="55" selection-end-line="26" selection-end-column="55" />
+        <state>
+          <caret selection-end-line="5" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/8.0.11/mysql-connector-java-8.0.11-sources.jar!/com/mysql/cj/jdbc/exceptions/SQLError.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="126" selection-start-line="126" selection-end-line="126" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hiber/session/HibernateUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="9" column="27" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ven/service/NewAtricleSelector.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="13" column="66" lean-forward="true" selection-start-line="13" selection-start-column="66" selection-end-line="13" selection-end-column="66" />
+        <state relative-caret-position="93">
+          <caret line="54" column="19" selection-start-line="54" selection-start-column="19" selection-end-line="54" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ven/service/CommentsSelector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="31" column="24" lean-forward="true" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ven/controller/SignUpController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hiber/session/CommentsSession.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="22" column="38" lean-forward="true" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
+        <state relative-caret-position="258">
+          <caret line="17" column="41" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1168,21 +1086,189 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/hiber/session/NewAtricleSession.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="19" column="29" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="29" />
+        <state relative-caret-position="50">
+          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/html/NewArticle.html">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hiber/session/SignUpSession.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ven/service/ArticleSelector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#479#480#0" expanded="true" />
+            <element signature="e#517#518#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ven/service/LoginSelector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="919">
+          <caret line="40" column="13" lean-forward="true" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#426#427#0" expanded="true" />
+            <element signature="e#464#465#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ven/service/NewAtricleSelector.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
-          <caret line="128" column="99" selection-start-line="128" selection-start-column="99" selection-end-line="128" selection-end-column="99" />
+          <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
           <folding>
-            <element signature="n#style#0;n#textarea#0;n#form#0;n#div#0;n#article#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#388#389#0" expanded="true" />
+            <element signature="e#426#427#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ven/service/SignUpSelector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#371#372#0" expanded="true" />
+            <element signature="e#409#410#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ven/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#692#693#0" expanded="true" />
+            <element signature="e#742#743#0" expanded="true" />
+            <element signature="e#733#734#0" expanded="true" />
+            <element signature="e#779#780#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ven/controller/SignUpController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#621#622#0" expanded="true" />
+            <element signature="e#661#662#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ven/controller/NewArticleController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#769#770#0" expanded="true" />
+            <element signature="e#809#810#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hiber/session/LoginSession.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ven/controller/ArticlesController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#684#685#0" expanded="true" />
+            <element signature="e#724#725#0" expanded="true" />
+            <element signature="e#797#798#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="55" column="19" selection-start-line="55" selection-start-column="19" selection-end-line="55" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hiber/session/ArticleSession.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/blog/WEB-INF/dispatcher-servlet.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="700">
+          <caret line="28" column="22" lean-forward="true" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hiber/model/UserEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hiber/model/LoginEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hiber/model/Identity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hiber/model/CommentsEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hiber/model/ArticlesEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
     </entry>
@@ -1240,7 +1326,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Web|blog</last-edited>
+          <last-edited>Spring|personal_blog</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

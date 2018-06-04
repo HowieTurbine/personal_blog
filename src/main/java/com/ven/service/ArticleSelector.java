@@ -2,6 +2,7 @@ package com.ven.service;
 
 import com.hiber.model.ArticlesEntity;
 import com.hiber.session.ArticleSession;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.RequestParam;
 
@@ -10,9 +11,15 @@ import java.util.List;
 
 @Service
 public class ArticleSelector {
+    private final ArticleSession session;
+
+    @Autowired
+    public ArticleSelector(ArticleSession session) {
+        this.session = session;
+    }
+
     public List<ArticlesEntity> getAll()
     {
-        ArticleSession session=new ArticleSession();
         List<ArticlesEntity> all=session.selectAll();
         if(all!=null)
             return all;
@@ -23,7 +30,6 @@ public class ArticleSelector {
     {
         //Query to the specific article by id
         ArticlesEntity selected;
-        ArticleSession session=new ArticleSession();
         selected=session.select_with_id(Integer.valueOf(id));
         return selected;
     }

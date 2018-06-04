@@ -3,6 +3,7 @@ package com.ven.controller;
 import com.hiber.session.NewAtricleSession;
 import com.ven.service.NewAtricleSelector;
 import com.ven.service.SignUpSelector;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -15,6 +16,13 @@ import java.util.Map;
 @Controller
 @RequestMapping("/NewArticle")
 public class NewArticleController {
+    private final NewAtricleSelector selector;
+
+    @Autowired
+    public NewArticleController(NewAtricleSelector selector) {
+        this.selector = selector;
+    }
+
     @RequestMapping(value = "/new",method = RequestMethod.POST)
     @ResponseBody
     public Map<String,String> New(@RequestParam(value="title",required = false) String title,
@@ -23,7 +31,6 @@ public class NewArticleController {
                                      @RequestParam(value="author",required = false) String author)
     {
 
-        NewAtricleSelector selector = new NewAtricleSelector();
         return selector.add(title,content,time,author);
     }
 }

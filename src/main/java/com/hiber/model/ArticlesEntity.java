@@ -14,6 +14,19 @@ public class ArticlesEntity {
     private String content;
     private byte[] images;
 
+    public ArticlesEntity()
+    {
+
+    }
+    public ArticlesEntity(int idA, String title, String author, Timestamp time, String content, byte[] images) {
+        this.idA = idA;
+        this.title = title;
+        this.author = author;
+        this.time = time;
+        this.content = content;
+        this.images = images;
+    }
+
     @Id
     @Column(name = "id_A")
     public int getIdA() {

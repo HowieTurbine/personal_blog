@@ -4,16 +4,27 @@ import com.hiber.model.ArticlesEntity;
 import com.hiber.model.Identity;
 import com.hiber.model.UserEntity;
 import org.hibernate.Session;
+import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.sql.Timestamp;
 import java.util.HashMap;
 import java.util.Map;
-
+@Service
 public class NewAtricleSession {
 
-    private HibernateUtils Utils=new HibernateUtils();
-    private Session session=Utils.getSession();
+    private final SessionFactory sessionFactory;
+    private Session session;
+    private Transaction transaction;
+
+    @Autowired
+    public NewAtricleSession(SessionFactory sessionFactory) {
+        this.sessionFactory = sessionFactory;
+        Session session = sessionFactory.openSession();
+        Transaction transaction=session.beginTransaction();
+    }
 
 
 

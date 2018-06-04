@@ -2,6 +2,7 @@ package com.ven.controller;
 
 import com.hiber.model.ArticlesEntity;
 import com.hiber.session.ArticleSession;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -14,12 +15,13 @@ import java.util.List;
 @Controller
 @RequestMapping("/query")
 public class ArticlesController {
+private final ArticleSelector selector;
 
-    private ArticleSelector selector;
-
-    public ArticlesController() {
-        selector = new ArticleSelector();
+    @Autowired
+    public ArticlesController(ArticleSelector selector) {
+        this.selector = selector;
     }
+
 
     //Query for all the articles
     @RequestMapping("/articles")

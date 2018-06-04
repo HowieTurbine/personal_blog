@@ -2,6 +2,7 @@ package com.ven.service;
 
 import com.hiber.model.UserEntity;
 import com.hiber.session.LoginSession;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.HashMap;
@@ -10,11 +11,17 @@ import java.util.Map;
 
 @Service()
 public class LoginSelector {
+    private final LoginSession session;
+
+    @Autowired
+    public LoginSelector(LoginSession session) {
+        this.session = session;
+    }
+
     public Map<String,String> check(String username, String password) {
         Map<String,String> res=new HashMap<>();
         res.put("Error","");
         res.put("Identity","");
-        LoginSession session = new LoginSession();
         UserEntity res_entity = session.select_by_username(username);
         if (res_entity == null)
         {
@@ -36,7 +43,6 @@ public class LoginSelector {
     }
 
     public List<UserEntity> allUser() {
-        LoginSession session = new LoginSession();
         List<UserEntity> e = session.selectAll();
         return e;
     }

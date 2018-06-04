@@ -3,15 +3,25 @@ package com.hiber.session;
 import org.hibernate.Query;
 import org.hibernate.Session;
 
+import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import com.hiber.model.ArticlesEntity;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
-
+@Service
 public class ArticleSession {
-    private HibernateUtils Utils=new HibernateUtils();;
-    private Session session=Utils.getSession();
-    private Transaction transaction=session.beginTransaction();
+    private final SessionFactory sessionFactory;
+    private Session session;
+    private Transaction transaction;
+
+    @Autowired
+    public ArticleSession(SessionFactory sessionFactory) {
+        this.sessionFactory = sessionFactory;
+        session = sessionFactory.openSession();
+        transaction=session.beginTransaction();
+    }
 
     public List<ArticlesEntity> selectAll() {
         Query query;

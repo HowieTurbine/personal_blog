@@ -1,15 +1,15 @@
 package com.hiber.model;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Table(name = "login", schema = "blog_data", catalog = "")
-public class UserEntity {
-
-    public UserEntity() {
+public class LoginEntity {
+    public LoginEntity() {
     }
 
-    public UserEntity(int uId, String uName, String uPassword, Identity identity) {
+    public LoginEntity(int uId, String uName, String uPassword, Serializable identity) {
 
         this.uId = uId;
         this.uName = uName;
@@ -20,8 +20,7 @@ public class UserEntity {
     private int uId;
     private String uName;
     private String uPassword;
-    private Identity identity;
-
+    private Serializable identity;
 
     @Id
     @Column(name = "u_id")
@@ -53,13 +52,13 @@ public class UserEntity {
         this.uPassword = uPassword;
     }
 
-    @Enumerated(EnumType.STRING)
+    @Basic
     @Column(name = "identity")
-    public Identity getIdentity() {
+    public Serializable getIdentity() {
         return identity;
     }
 
-    public void setIdentity(Identity identity) {
+    public void setIdentity(Serializable identity) {
         this.identity = identity;
     }
 
@@ -68,7 +67,7 @@ public class UserEntity {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        UserEntity that = (UserEntity) o;
+        LoginEntity that = (LoginEntity) o;
 
         if (uId != that.uId) return false;
         if (uName != null ? !uName.equals(that.uName) : that.uName != null) return false;

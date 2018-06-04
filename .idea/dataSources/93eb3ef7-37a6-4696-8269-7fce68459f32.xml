@@ -916,27 +916,30 @@
     <table id="230" parent="2" name="Articles">
       <Engine>InnoDB</Engine>
     </table>
-    <table id="231" parent="2" name="login">
+    <table id="231" parent="2" name="Comments">
       <Engine>InnoDB</Engine>
     </table>
-    <column id="232" parent="230" name="id_A">
+    <table id="232" parent="2" name="login">
+      <Engine>InnoDB</Engine>
+    </table>
+    <column id="233" parent="230" name="id_A">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="233" parent="230" name="title">
+    <column id="234" parent="230" name="title">
       <Position>2</Position>
       <DataType>longtext|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="234" parent="230" name="author">
+    <column id="235" parent="230" name="author">
       <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="235" parent="230" name="time">
+    <column id="236" parent="230" name="time">
       <Position>4</Position>
       <DataType>timestamp|0s</DataType>
       <NotNull>1</NotNull>
@@ -944,46 +947,92 @@
       <ColumnKind>normal</ColumnKind>
       <OnUpdate>CURRENT_TIMESTAMP</OnUpdate>
     </column>
-    <column id="236" parent="230" name="content">
+    <column id="237" parent="230" name="content">
       <Position>5</Position>
       <DataType>longtext|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="237" parent="230" name="images">
+    <column id="238" parent="230" name="images">
       <Position>6</Position>
       <DataType>blob|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="238" parent="230" name="PRIMARY">
+    <key id="239" parent="230" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id_A</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="239" parent="231" name="u_id">
+    <column id="240" parent="231" name="Id_C">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="240" parent="231" name="u_name">
+    <column id="241" parent="231" name="Id_A">
+      <Position>2</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="242" parent="231" name="username">
+      <Position>3</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="243" parent="231" name="com">
+      <Position>4</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="244" parent="231" name="time">
+      <Position>5</Position>
+      <DataType>timestamp|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+      <OnUpdate>CURRENT_TIMESTAMP</OnUpdate>
+    </column>
+    <index id="245" parent="231" name="Id_A">
+      <ColNames>Id_A</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="246" parent="231" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>Id_C</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="247" parent="231" name="Comments_ibfk_1">
+      <ColNames>Id_A</ColNames>
+      <RefSchemaName>blog_data</RefSchemaName>
+      <RefTableName>Articles</RefTableName>
+      <RefColNames>id_A</RefColNames>
+    </foreign-key>
+    <column id="248" parent="232" name="u_id">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="249" parent="232" name="u_name">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="241" parent="231" name="u_password">
+    <column id="250" parent="232" name="u_password">
       <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="242" parent="231" name="identity">
+    <column id="251" parent="232" name="identity">
       <Position>4</Position>
       <DataType>enum(&apos;admin&apos;, &apos;user&apos;)|0e</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="243" parent="231" name="PRIMARY">
+    <key id="252" parent="232" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>u_id</ColNames>
       <Primary>1</Primary>
