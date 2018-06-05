@@ -40,7 +40,7 @@ public class CommentsSelector {
         Map<String, String> res = new HashMap<>();
 
 
-            if (articleSelector.select_by_id((id_A+"")) != null) {
+            if (articleSelector.select_by_id((id_A)) == null) {
                 res.put("Error", "No such article");
                 return res;
             } else {

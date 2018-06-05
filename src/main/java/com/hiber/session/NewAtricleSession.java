@@ -22,8 +22,8 @@ public class NewAtricleSession {
     @Autowired
     public NewAtricleSession(SessionFactory sessionFactory) {
         this.sessionFactory = sessionFactory;
-        Session session = sessionFactory.openSession();
-        Transaction transaction=session.beginTransaction();
+        session = sessionFactory.openSession();
+        transaction=session.beginTransaction();
     }
 
 
@@ -37,12 +37,10 @@ public class NewAtricleSession {
        todo.setTime(time);
        todo.setTitle(title);
        todo.setContent(content);
-        //开始事务
-        Transaction tran = session.beginTransaction();
         //执行语句
         session.save(todo);
         //提交事务
-        tran.commit();
+        transaction.commit();
         res.put("Error","");
         return res;
     }

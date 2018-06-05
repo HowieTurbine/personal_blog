@@ -18,8 +18,8 @@ public class LoginSession {
     @Autowired
     public LoginSession(SessionFactory sessionFactory) {
         this.sessionFactory = sessionFactory;
-        Session session = sessionFactory.openSession();
-        Transaction transaction=session.beginTransaction();
+        session = sessionFactory.openSession();
+        transaction=session.beginTransaction();
     }
 
     public List<UserEntity> selectAll() {

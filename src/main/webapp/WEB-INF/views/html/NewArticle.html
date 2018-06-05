@@ -79,11 +79,43 @@
     <div id='cssmenu' class="align-center">
         <ul>
             <li><a href='./main'><span>Home</span></a></li>
-            <li class="./contents"><a href='#'><span>Contents</span></a></li>
-            <li><a href='#'><span>Main Page</span></a></li>
+            <li><a href='./contents'><span>Contents</span></a></li>
+            <li><a href='http://www.howiezhao.cn/welcomepage/'><span>Main Page</span></a></li>
+            <li class="active"><a href='./NewArticle'><span>New Article</span></a></li>
         </ul>
-
     </div>
+
+    <div  class="align-center">
+        <h4 id="userInfo" style="text-align: right"></h4>
+    </div>
+
+    <script src="./js/jquerysession.js"></script>
+    <script>
+        $(document).ready(function(){
+            //$.session.set('username', 'aa')
+            var username = $.session.get('username');
+            if(typeof(username)=='undefined')
+            {
+               alert("You need to login first!")
+                    window.location.href='./main';
+            }
+            else
+            {
+                var identity = $.session.get('Identity')
+                console.log(identity)
+                if(identity!="admin")
+                {
+                    alert("Sorry, visitor could only comment on existed article :(")
+                        window.location.href='./main';
+                }
+                else
+                {
+                    var welcome = "welcome "+username;
+                    $("#userInfo").text(welcome);
+                }
+            }
+        });
+    </script>
 
     <header class="">
         <div class="logo">
@@ -155,7 +187,13 @@
         </div>
     </section>
     <!--////////////////////////////////////Footer-->
-
+    <footer>
+        <div class="zerogrid copyright">
+            <div class="wrapper">
+                Copyright @ - More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Author <a href="http://www.howiezhao.cn/">HowieZhao</a> 备案号 : 皖ICP备18011487号
+            </div>
+        </div>
+    </footer>
     <!-- carousel -->
     <script src="owl-carousel/owl.carousel.js"></script>
     <script>

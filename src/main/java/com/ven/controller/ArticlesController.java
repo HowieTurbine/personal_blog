@@ -32,7 +32,7 @@ private final ArticleSelector selector;
 
     @RequestMapping("/article")
     @ResponseBody
-    public ArticlesEntity select_by_id(@RequestParam(value = "id", required = true) String id) {
+    public ArticlesEntity select_by_id(@RequestParam(value = "id", required = true) int id) {
         return selector.select_by_id(id);
     }
 }

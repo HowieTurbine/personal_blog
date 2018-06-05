@@ -26,11 +26,11 @@ public class ArticleSelector {
         else
             return new ArrayList<ArticlesEntity>();
     }
-    public ArticlesEntity select_by_id(@RequestParam(value="id",required=true)String id)
+    public ArticlesEntity select_by_id(@RequestParam(value="id",required=true)int id)
     {
         //Query to the specific article by id
         ArticlesEntity selected;
-        selected=session.select_with_id(Integer.valueOf(id));
+        selected=session.select_with_id(id);
         return selected;
     }
 }

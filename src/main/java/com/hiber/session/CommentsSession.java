@@ -22,8 +22,8 @@ public class CommentsSession {
     @Autowired
     public CommentsSession(SessionFactory sessionFactory) {
         this.sessionFactory = sessionFactory;
-        Session session = sessionFactory.openSession();
-        Transaction transaction=session.beginTransaction();
+        session = sessionFactory.openSession();
+        transaction=session.beginTransaction();
     }
 
     public List<ArticlesEntity> selectAll() {
@@ -64,12 +64,10 @@ public class CommentsSession {
         todo.setUsername(username);
         todo.setCom(comments);
         todo.setIdA(id_A);
-        //开始事务
-        Transaction tran = session.beginTransaction();
         //执行语句
         session.save(todo);
         //提交事务
-        tran.commit();
+        transaction.commit();
         res.put("Error","");
         return res;
     }
