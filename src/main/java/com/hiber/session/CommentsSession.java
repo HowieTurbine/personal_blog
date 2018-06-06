@@ -17,13 +17,11 @@ import java.util.Map;
 public class CommentsSession {
     private final SessionFactory sessionFactory;
     private Session session;
-    private Transaction transaction;
 
     @Autowired
     public CommentsSession(SessionFactory sessionFactory) {
         this.sessionFactory = sessionFactory;
         session = sessionFactory.openSession();
-        transaction=session.beginTransaction();
     }
 
     public List<ArticlesEntity> selectAll() {
@@ -61,10 +59,12 @@ public class CommentsSession {
     {
         Map<String,String> res= new HashMap<>();
         CommentsEntity todo=new CommentsEntity();
+        Transaction transaction = session.beginTransaction();
         todo.setUsername(username);
         todo.setCom(comments);
         todo.setIdA(id_A);
         //执行语句
+        session.clear();
         session.save(todo);
         //提交事务
         transaction.commit();
