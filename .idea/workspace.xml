@@ -7,18 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8000bdb0-b8d7-4916-b5ca-e822037c4448" name="Default" comment="modify request method for login to POST">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hiber/session/ArticleSession.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hiber/session/ArticleSession.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hiber/session/CommentsSession.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hiber/session/CommentsSession.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hiber/session/NewAtricleSession.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hiber/session/NewAtricleSession.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hiber/session/SignUpSession.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hiber/session/SignUpSession.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/html/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/html/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/html/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/html/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/html/sign_up.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/html/sign_up.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/html/single.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/html/single.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/blog/WEB-INF/dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/blog/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/blog/WEB-INF/views/html/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/blog/WEB-INF/views/html/css/style.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -75,8 +66,8 @@
       <file leaf-file-name="single.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/html/single.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="203" column="16" selection-start-line="203" selection-start-column="16" selection-end-line="203" selection-end-column="16" />
+            <state relative-caret-position="344">
+              <caret line="154" column="56" selection-start-line="154" selection-start-column="56" selection-end-line="154" selection-end-column="56" />
               <folding>
                 <element signature="n#style#0;n#h4#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -431,17 +422,6 @@
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="html" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="personal_blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="personal_blog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="html" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -651,7 +631,7 @@
       <workItem from="1526885257352" duration="4265000" />
       <workItem from="1526908085856" duration="5775000" />
       <workItem from="1527166907984" duration="48334000" />
-      <workItem from="1528024855506" duration="51887000" />
+      <workItem from="1528024855506" duration="52777000" />
     </task>
     <task id="LOCAL-00001" summary="Add test version hibernate">
       <created>1526909857973</created>
@@ -751,17 +731,24 @@
       <option name="project" value="LOCAL" />
       <updated>1528295552916</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="runnable version 1.0">
+      <created>1528361496518</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1528361496518</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="147741000" />
+    <option name="totallyTimeSpent" value="148631000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="15" sideWeight="0.12135417" side_tool="true" visible="true" weight="0.41702127" />
+      <window_info anchor="bottom" id="Event Log" order="15" sideWeight="0.12135417" side_tool="true" visible="true" weight="0.21276596" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32943678" />
       <window_info anchor="right" id="Maven Projects" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
@@ -779,11 +766,11 @@
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Version Control" order="13" sideWeight="0.49947917" weight="0.32978722" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.87864584" visible="true" weight="0.41702127" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.87864584" visible="true" weight="0.21276596" />
       <window_info anchor="bottom" id="Spring" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info id="Persistence" order="7" sideWeight="0.26642334" side_tool="true" visible="true" weight="0.17395833" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.73357666" visible="true" weight="0.17395833" />
+      <window_info id="Persistence" order="7" sideWeight="0.26621622" side_tool="true" visible="true" weight="0.17395833" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7337838" visible="true" weight="0.17395833" />
       <window_info id="Web" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49947917" weight="0.3287234" />
       <window_info anchor="right" id="Theme Preview" order="7" />
@@ -844,7 +831,8 @@
     <MESSAGE value="combine spring with hibernate but still have bugs" />
     <MESSAGE value="Add new commments textarea in single page, fix bugs" />
     <MESSAGE value="Almost finished, prepared for testing" />
-    <option name="LAST_COMMIT_MESSAGE" value="Almost finished, prepared for testing" />
+    <MESSAGE value="runnable version 1.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="runnable version 1.0" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1282,8 +1270,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/html/single.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="203" column="16" selection-start-line="203" selection-start-column="16" selection-end-line="203" selection-end-column="16" />
+        <state relative-caret-position="344">
+          <caret line="154" column="56" selection-start-line="154" selection-start-column="56" selection-end-line="154" selection-end-column="56" />
           <folding>
             <element signature="n#style#0;n#h4#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
