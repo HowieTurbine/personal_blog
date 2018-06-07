@@ -25,6 +25,7 @@ public class CommentsSession {
     }
 
     public List<ArticlesEntity> selectAll() {
+        session.clear();
         Query query;
         {
             query = session.createQuery("from CommentsEntity E order by E.time desc ");
@@ -40,6 +41,7 @@ public class CommentsSession {
         return list;
     }
     public List<CommentsEntity> select_with_article_id(int id) {
+        session.clear();
         System.out.println(id);
         Query query;
         {
@@ -57,6 +59,7 @@ public class CommentsSession {
     }
     public Map<String,String> add(String username, String comments, int id_A)
     {
+        session.clear();
         Map<String,String> res= new HashMap<>();
         CommentsEntity todo=new CommentsEntity();
         Transaction transaction = session.beginTransaction();
@@ -64,7 +67,6 @@ public class CommentsSession {
         todo.setCom(comments);
         todo.setIdA(id_A);
         //执行语句
-        session.clear();
         session.save(todo);
         //提交事务
         transaction.commit();

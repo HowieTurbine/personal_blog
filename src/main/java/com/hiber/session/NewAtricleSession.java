@@ -30,8 +30,8 @@ public class NewAtricleSession {
 
     public Map<String,String> add_new_article(String title, String content, Timestamp time, String author)
     {
+        session.clear();
         Map<String,String> res= new HashMap<>();
-
         ArticlesEntity todo=new ArticlesEntity();
        todo.setAuthor(author);
        todo.setTime(time);

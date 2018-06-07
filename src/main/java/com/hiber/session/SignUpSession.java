@@ -17,13 +17,11 @@ public class SignUpSession {
 
     private final SessionFactory sessionFactory;
     private Session session;
-    private Transaction transaction;
 
     @Autowired
     public SignUpSession(SessionFactory sessionFactory) {
         this.sessionFactory = sessionFactory;
        session = sessionFactory.openSession();
-        transaction=session.beginTransaction();
     }
 
     private String iCode ="1234";
@@ -34,6 +32,7 @@ public class SignUpSession {
     }
     public Map<String,String> add(String username,String password,String iCode)
     {
+        session.clear();
         Map<String,String> res= new HashMap<>();
 
                 UserEntity todo=new UserEntity();

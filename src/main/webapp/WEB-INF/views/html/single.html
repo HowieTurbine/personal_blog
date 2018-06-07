@@ -58,7 +58,7 @@
                 allowPreviewEmoticons : false,
                 allowImageUpload : false,
                 items : [
-                    'fontname', 'fontsize', '|', 'forecolor', 'hilitecolor', 'bold', 'italic', 'underline',
+                    'source', '|','fontname', 'fontsize', '|', 'forecolor', 'hilitecolor', 'bold', 'italic', 'underline',
                     'removeformat', '|', 'justifyleft', 'justifycenter', 'justifyright', 'insertorderedlist',
                     'insertunorderedlist', '|', 'emoticons', 'link']
             });
@@ -201,12 +201,12 @@
 	</section>
 	<!-- Comments -->
 		<div class="wrap-container">
-			<article  class="post zerogrid">
+			<div  class="post zerogrid">
 				<div class="row wrap-post" id="comments">
 					<div>
 					</div>
 				</div>
-			</article>
+			</div>
 	<!-- New Comments -->
 			<section >
 				<div class="wrap-container">
@@ -232,6 +232,7 @@
                         {
                             alert("You need to login first!");
                             window.location.href='./Login';
+                            return;
                         }
 
                         var html = editor.html();

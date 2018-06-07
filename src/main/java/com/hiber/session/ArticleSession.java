@@ -24,6 +24,7 @@ public class ArticleSession {
     }
 
     public List<ArticlesEntity> selectAll() {
+        session.clear();
         Query query;
         {
             query = session.createQuery("from ArticlesEntity E order by E.time desc ");
@@ -40,6 +41,7 @@ public class ArticleSession {
     }
     public ArticlesEntity select_with_id(int id) {
         System.out.println(id);
+        session.clear();
         Query query;
         {
             query = session.createQuery("from ArticlesEntity A where A.idA = "+id);
