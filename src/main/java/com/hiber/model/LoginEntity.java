@@ -24,6 +24,7 @@ public class LoginEntity {
 
     @Id
     @Column(name = "u_id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     public int getuId() {
         return uId;
     }

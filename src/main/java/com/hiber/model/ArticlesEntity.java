@@ -29,6 +29,7 @@ public class ArticlesEntity {
 
     @Id
     @Column(name = "id_A")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     public int getIdA() {
         return idA;
     }

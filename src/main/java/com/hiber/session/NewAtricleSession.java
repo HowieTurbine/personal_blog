@@ -22,15 +22,14 @@ public class NewAtricleSession {
     @Autowired
     public NewAtricleSession(SessionFactory sessionFactory) {
         this.sessionFactory = sessionFactory;
-        session = sessionFactory.openSession();
-        transaction=session.beginTransaction();
     }
 
 
 
     public Map<String,String> add_new_article(String title, String content, Timestamp time, String author)
     {
-        session.clear();
+        session = sessionFactory.openSession();
+        transaction = session.beginTransaction();
         Map<String,String> res= new HashMap<>();
         ArticlesEntity todo=new ArticlesEntity();
        todo.setAuthor(author);
@@ -42,6 +41,9 @@ public class NewAtricleSession {
         //提交事务
         transaction.commit();
         res.put("Error","");
+        session.flush();
+        session.clear();
+        session.close();
         return res;
     }
 

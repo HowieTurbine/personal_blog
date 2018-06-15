@@ -1,10 +1,7 @@
 package com.hiber.session;
 
-import org.hibernate.Query;
-import org.hibernate.Session;
+import org.hibernate.*;
 
-import org.hibernate.SessionFactory;
-import org.hibernate.Transaction;
 import com.hiber.model.ArticlesEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -19,16 +16,13 @@ public class ArticleSession {
     @Autowired
     public ArticleSession(SessionFactory sessionFactory) {
         this.sessionFactory = sessionFactory;
-        session = sessionFactory.openSession();
-        transaction=session.beginTransaction();
     }
 
     public List<ArticlesEntity> selectAll() {
+        session = sessionFactory.openSession();
         session.clear();
-        Query query;
-        {
-            query = session.createQuery("from ArticlesEntity E order by E.time desc ");
-        }
+        Query query = session.createQuery("from ArticlesEntity E order by E.time desc ");
+        query.setCacheMode(CacheMode.IGNORE);
         List<ArticlesEntity> list;
         {
             list = query.list();
@@ -37,15 +31,15 @@ public class ArticleSession {
         {
             System.out.println(a.getTime());
         }
+        session.close();
         return list;
     }
     public ArticlesEntity select_with_id(int id) {
         System.out.println(id);
+        session = sessionFactory.openSession();
         session.clear();
-        Query query;
-        {
-            query = session.createQuery("from ArticlesEntity A where A.idA = "+id);
-        }
+        Query query = session.createQuery("from ArticlesEntity A where A.idA = "+id);
+        query.setCacheMode(CacheMode.IGNORE);
         List<ArticlesEntity> list;
         {
             list = query.list();
@@ -55,6 +49,7 @@ public class ArticleSession {
             System.out.println(a.getTime());
         }
         System.out.println("Size: "+list.size());
+        session.close();
         return list.get(0);
     }
 

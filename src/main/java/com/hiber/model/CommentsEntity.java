@@ -28,6 +28,7 @@ public class CommentsEntity {
 
     @Id
     @Column(name = "Id_C")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     public int getIdC() {
         return idC;
     }

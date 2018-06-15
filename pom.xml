@@ -80,7 +80,29 @@
           <version>1.6.4</version>
       </dependency>
 
-      <!-- 添加javassist -->
+    <!--c3p0连接池-->
+    <dependency>
+      <groupId>c3p0</groupId>
+      <artifactId>c3p0</artifactId>
+      <version>0.9.1.2</version>
+    </dependency>
+    <dependency>
+      <groupId>ch.qos.logback</groupId>
+      <artifactId>logback-classic</artifactId>
+      <version>1.0.11</version>
+    </dependency>
+    <dependency>
+      <groupId>com.mchange</groupId>
+      <artifactId>mchange-commons-java</artifactId>
+      <version>0.2.7</version>
+    </dependency>
+    <!-- Hibernate c3p0 connection pool -->
+    <dependency>
+      <groupId>org.hibernate</groupId>
+      <artifactId>hibernate-c3p0</artifactId>
+      <version>4.1.4.Final</version>
+    </dependency>
+    <!-- 添加javassist -->
       <dependency>
           <groupId>javassist</groupId>
           <artifactId>javassist</artifactId>

@@ -21,7 +21,6 @@ public class SignUpSession {
     @Autowired
     public SignUpSession(SessionFactory sessionFactory) {
         this.sessionFactory = sessionFactory;
-       session = sessionFactory.openSession();
     }
 
     private String iCode ="1234";
@@ -32,6 +31,7 @@ public class SignUpSession {
     }
     public Map<String,String> add(String username,String password,String iCode)
     {
+        session = sessionFactory.openSession();
         session.clear();
         Map<String,String> res= new HashMap<>();
 
@@ -46,6 +46,8 @@ public class SignUpSession {
                 //提交事务
                 tran.commit();
                 res.put("Error","");
+        session.clear();
+        session.close();
                 return res;
     }
 

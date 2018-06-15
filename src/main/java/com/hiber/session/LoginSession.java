@@ -18,11 +18,10 @@ public class LoginSession {
     @Autowired
     public LoginSession(SessionFactory sessionFactory) {
         this.sessionFactory = sessionFactory;
-        session = sessionFactory.openSession();
-        transaction=session.beginTransaction();
     }
 
     public List<UserEntity> selectAll() {
+        session = sessionFactory.openSession();
         Query query;
         {
             query = session.createQuery("from UserEntity E ");
@@ -35,10 +34,12 @@ public class LoginSession {
         {
 
         }
+        session.close();
         return list;
     }
     public UserEntity select_by_username(String username)
     {
+        session = sessionFactory.openSession();
         Query query;
         {
             System.out.println(username);
@@ -48,6 +49,8 @@ public class LoginSession {
         {
             list = query.list();
         }
+        session.clear();
+            session.close();
         if(list.size()==0)
             return null;
         else
@@ -56,6 +59,7 @@ public class LoginSession {
 
     public UserEntity select_by_id(int id)
     {
+        session = sessionFactory.openSession();
         Query query;
         {
             System.out.println(id);
@@ -65,6 +69,8 @@ public class LoginSession {
         {
             list = query.list();
         }
+        session.clear();
+            session.close();
         if(list.size()==0)
             return null;
         else

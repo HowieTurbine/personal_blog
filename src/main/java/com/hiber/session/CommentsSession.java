@@ -21,7 +21,6 @@ public class CommentsSession {
     @Autowired
     public CommentsSession(SessionFactory sessionFactory) {
         this.sessionFactory = sessionFactory;
-        session = sessionFactory.openSession();
     }
 
     public List<ArticlesEntity> selectAll() {
@@ -38,9 +37,11 @@ public class CommentsSession {
         {
             System.out.println(a.getTime());
         }
+        session.clear();
         return list;
     }
     public List<CommentsEntity> select_with_article_id(int id) {
+        session = sessionFactory.openSession();
         session.clear();
         System.out.println(id);
         Query query;
@@ -55,10 +56,13 @@ public class CommentsSession {
         {
         }
         System.out.println("Size: "+list.size());
+        session.clear();
+        session.close();
         return list;
     }
     public Map<String,String> add(String username, String comments, int id_A)
     {
+        session = sessionFactory.openSession();
         session.clear();
         Map<String,String> res= new HashMap<>();
         CommentsEntity todo=new CommentsEntity();
@@ -71,6 +75,8 @@ public class CommentsSession {
         //提交事务
         transaction.commit();
         res.put("Error","");
+        session.clear();
+        session.close();
         return res;
     }
 }
